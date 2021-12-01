@@ -16,7 +16,9 @@ public class Main {
                 System.out.println("Введите то, что вы хотели вычислить");
                 var expression = scanner.nextLine();
                 var action = processor.chooseAction(expression);
-                processor.applyAction(expression, action);
+                int result = processor.applyAction(expression, action);
+
+                System.out.println(result);
 
             } else if (num == 0){
                 System.out.println("Выход");
