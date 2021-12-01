@@ -16,13 +16,13 @@ public class Logic {
 
     public void logic(){
         if (a == 1){
-            calculation.Plus();
+            calculation.plus();
         } else if (a == 2) {
-            calculation.Minus();
+            calculation.minus();
         } else if (a == 3){
-            calculation.Multi();
+            calculation.multi();
         } else {
-            calculation.Delit();
+            calculation.divide();
         }
     }
 

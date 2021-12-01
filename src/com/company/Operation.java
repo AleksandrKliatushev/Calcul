@@ -25,19 +25,24 @@ public class Operation {
     public int mathAction(String [] temp){
         int a = 0;
         for (String s : temp) {
-                if (s.equals("+")) {
+            switch (s) {
+                case "+" -> {
                     a = 1;
                     return a;
-                } else if (s.equals("-")) {
+                }
+                case "-" -> {
                     a = 2;
                     return a;
-                } else if (s.equals("*")) {
+                }
+                case "*" -> {
                     a = 3;
                     return a;
-                } else if (s.equals("/")) {
+                }
+                case "/" -> {
                     a = 4;
                     return a;
                 }
+            }
             }
         return a;
     }

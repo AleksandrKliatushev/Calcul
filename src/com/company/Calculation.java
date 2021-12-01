@@ -13,19 +13,19 @@ public class Calculation {
         }
     }
 
-    public void Plus() {
+    public void plus() {
         System.out.println(a + b);
     }
 
-    public void Minus() {
+    public void minus() {
         System.out.println(a - b);
     }
 
-    public void Multi() {
+    public void multi() {
         System.out.println(a * b);
     }
 
-    public void Delit() {
+    public void divide() {
         System.out.println(a / b);
     }
 

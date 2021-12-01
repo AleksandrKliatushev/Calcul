@@ -1,6 +1,6 @@
 package com.company;
 
-import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class Main {
@@ -9,8 +9,8 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         while(true) {
-            System.out.println("Запустить калькулятор?\nНажми 1");
-            System.out.println("Выход 0");
+            System.out.println("Запустить калькулятор?\n Нажми 1");
+            System.out.println(" Выход 0");
             int num = scanner.nextInt();
 
             if(num == 1) {
