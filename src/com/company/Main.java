@@ -1,12 +1,9 @@
 package com.company;
-
-
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
         while(true) {
             System.out.println("Запустить калькулятор?\n Нажми 1");
@@ -16,7 +13,7 @@ public class Main {
             if(num == 1) {
                 System.out.println("Введите то, что вы хотели вычислить");
                 Logic myCalculator = new Logic();
-                myCalculator.logic();
+                myCalculator.logic(myCalculator.rez());
             } else if (num == 0){
                 System.out.println("Выход");
                 break;

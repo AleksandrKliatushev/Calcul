@@ -12,46 +12,39 @@ public class Operation {
         this.str = str;
     }
 
-    public String [] inPutString(){
-        temp = str.split("");
-        return temp;
+    public String [] inPutString(){ //разбиваем строку на элементы массива
+        temp = str.split(""); // для опеределния какое мат. действие
+        return temp;                // определил пользователь
     }
 
-    public String [] inPutString1(){
+    public String [] inPutString1(){ // чистим введенную строку от не цифр и пробелов
         temp2 = str.replaceAll("\\D+", " ").split(" ");
         return temp2;
     }
 
-    public int mathAction(String [] temp){
+    public int mathAction(String [] temp){ //определяем какой операнд ввел user
         int a = 0;
         for (String s : temp) {
             switch (s) {
                 case "+" -> {
                     a = 1;
-                    return a;
                 }
                 case "-" -> {
                     a = 2;
-                    return a;
                 }
                 case "*" -> {
                     a = 3;
-                    return a;
                 }
                 case "/" -> {
                     a = 4;
-                    return a;
                 }
             }
             }
         return a;
     }
 
-    public ArrayList <Integer> onlyNumber(String [] temp){
+    public ArrayList <Integer> onlyNumber(String [] temp){ //сонвертируем строки в цифры
         for(String string : temp){
-            if(string.equals("+")||string.equals("-")||string.equals("*")||string.equals("/")||string.equals(" ")){
-                continue;
-            }
             Integer num = Integer.parseInt(string);
             intList.add(num);
         }
