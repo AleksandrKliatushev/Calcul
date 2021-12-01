@@ -8,12 +8,12 @@ public class Calculation {
 
     public Calculation(ArrayList<Integer> intArrayList) {
         for (int k : intArrayList) {
-            this.a = intArrayList.get(0);
+            this.a = intArrayList.get(0); //получаем на вход значение переменных
             this.b = intArrayList.get(1);
         }
     }
 
-    public void plus() {
+    public void plus() {               //производим действия
         System.out.println(a + b);
     }
 
